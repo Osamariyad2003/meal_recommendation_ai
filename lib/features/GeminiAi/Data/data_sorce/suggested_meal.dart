@@ -9,10 +9,17 @@ import '../models/ImageModel.dart';
 import '../models/suggested_meal_model.dart';
 
 class RecipeRemoteDatasource {
-  final String apiKey = 'AIzaSyBjI2b2Ark574i79UoKPwddsJin6FW2iCo';
+  final String api_key = 'AIzaSyCpE7wK21sbWLZRAhxWalbyBVvAzoPSsZs';
   final gemini = GenerativeModel(
-    model: 'gemini-1.5-flash-latest',
-    apiKey: 'AIzaSyBjI2b2Ark574i79UoKPwddsJin6FW2iCo',
+    model: 'gemini-1.5-pro',
+    apiKey: "AIzaSyCpE7wK21sbWLZRAhxWalbyBVvAzoPSsZs",
+    generationConfig: GenerationConfig(
+      temperature: 0.9,
+      topK: 40,
+      topP: 0.95,
+      maxOutputTokens: 8192,
+      responseMimeType: 'text/plain',
+    ),
   );
 
   String extractJson(String responseText) {
@@ -115,7 +122,7 @@ class RecipeRemoteDatasource {
         name: suggestedMeal.name,
         dishName: suggestedMeal.name,
         // Default to the name if dishName is not available
-        mealType: suggestedMeal.mealType,
+        mealType: suggestedMeal.mealType.join(" , "),
         rating: suggestedMeal.rating,
         cookTime: suggestedMeal.cookTime,
         servingSize: suggestedMeal.servingSize,

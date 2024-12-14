@@ -13,7 +13,6 @@ class User {
     this.meals = const [],
   });
 
-  // Copy method to create a new instance with updated values
   User copyWith({
     String? userId,
     String? name,

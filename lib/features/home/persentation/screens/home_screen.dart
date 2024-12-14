@@ -9,7 +9,7 @@ import '../../../../core/themes/app_colors.dart';
 import '../../domain/usecase/firestore_usecase.dart';
 import '../../domain/usecase/remove_meal.dart';
 import '../../domain/usecases/meal_usecase.dart';
-import '../businessLogic/meal_bloc.dart';
+import '../controller/meal_bloc.dart';
 import '../widgets/build_ingredient_button.dart';
 import '../widgets/build_search_bar.dart';
 import '../widgets/build_top_bar.dart';

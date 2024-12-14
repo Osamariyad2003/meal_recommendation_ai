@@ -29,7 +29,6 @@ class MealSuggestionScreen extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            // Input Field with Action
             IngredientInputField(
               controller: ingredientController,
               onGetSuggestionPressed: () {
@@ -55,17 +54,28 @@ class MealSuggestionScreen extends StatelessWidget {
                   return Column(
                     children: [
                       RecipeDetails( state: state,),
-                      ElevatedButton(onPressed: (){
-                        
-                        context.read<SuggestedRecipeBloc>().add(SaveSuggestedRecipeEvent(ingredientController.text));
-                      }, child: Container(
-                        decoration:BoxDecoration(
-                          color: AppColors.primaryColor,
-                          borderRadius: BorderRadius.circular(20)
+                      SizedBox(
+                        width: double.infinity,
+                        child: ElevatedButton(
+                          onPressed: (){
+                            context.read<SuggestedRecipeBloc>().add(SaveSuggestedRecipeEvent(ingredientController.text));
 
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: AppColors.primaryColor,
+                            padding: const EdgeInsets.symmetric(vertical: 15),
+                          ),
+                          child: const Text(
+                            'Add To My Meals',
+                            style: TextStyle(
+                              fontSize: 18,
+                              color: Colors.white,
+                              fontWeight: FontWeight.bold,
+                            ),
+                          ),
                         ),
-                        child: Text('add to my meals',style: AppTextStyles.font16Regular,),
-                      ))
+                      ),
+
                     ],
                   );
                 } else if (state is SuggestedRecipeError) {

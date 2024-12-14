@@ -1,6 +1,6 @@
 class AIMeal {
   final String name;
-  final String mealType;
+  final List<String> mealType;
   final double rating;
   final int cookTime;
   final int servingSize;
@@ -22,16 +22,32 @@ class AIMeal {
   factory AIMeal.fromJson(Map<String, dynamic> json) {
     return AIMeal(
       name: json['name'] as String,
-      mealType: json['meal_type'] as String,
-      rating: (json['rating'] as num).toDouble(),
-      cookTime: json['cook_time'] as int,
-      servingSize: json['serving_size'] as int,
-      summary: json['summary'] as String,
-      ingredients:  (json['ingredients'] as List<dynamic>?)
+      mealType: json['meal_type'] is List
+          ? List<String>.from(json['meal_type'])
+          : [json['meal_type'].toString()], // ✅ Ensure always a list
+
+      rating: (json['rating'] as num?)?.toDouble() ?? 0.0,
+
+      cookTime: json['cook_time'] is int
+          ? json['cook_time'] as int
+          : int.tryParse(json['cook_time'].toString()) ?? 0,
+
+      servingSize: json['serving_size'] is int
+          ? json['serving_size'] as int
+          : int.tryParse(json['serving_size'].toString()) ?? 1,
+
+      summary: (json['summary'] is Map<String, dynamic> && json['summary']?['description'] != null)
+          ? json['summary']['description'].toString()  // ✅ Ensure always String
+          : "No description available",
+
+      ingredients: (json['ingredients'] as List<dynamic>?)
           ?.map((ingredient) => Ingredient.fromJson(ingredient))
           .toList() ??
           [],
-      mealSteps: List<String>.from(json['meal_steps'] as List),
+
+      mealSteps: json['meal_steps'] is List
+          ? List<String>.from(json['meal_steps'])
+          : [json['meal_steps'].toString()], // ✅ Ensure always a list
     );
   }
 
@@ -43,8 +59,7 @@ class AIMeal {
       'cook_time': cookTime,
       'serving_size': servingSize,
       'summary': summary,
-      'ingredients':
-          ingredients.map((ingredient) => ingredient.toJson()).toList(),
+      'ingredients': ingredients.map((ingredient) => ingredient.toJson()).toList(),
       'meal_steps': mealSteps,
     };
   }
@@ -65,7 +80,7 @@ class Ingredient {
     return Ingredient(
       name: json['name'] as String,
       image: json['image_url'] as String,
-      quantity: json['quantity'] as String,
+      quantity: json['quantity'].toString(), // ✅ Converts int to String if needed
     );
   }
 

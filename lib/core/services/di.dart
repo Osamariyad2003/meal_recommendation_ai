@@ -82,11 +82,6 @@ void setupServiceLocator() {
   di.registerLazySingleton<FetchAndSaveFavMealsRepository>(
         () => MealRepositoryImpl_Fetch(di<FirebaseFirestore>()),
   );
-
-
-
-
-  // Register Use Case
   di.registerLazySingleton<FetchAndSaveFavMealsUseCase>(
         () => FetchAndSaveFavMealsUseCase(di<FetchAndSaveFavMealsRepository>()),
   );

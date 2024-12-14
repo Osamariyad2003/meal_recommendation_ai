@@ -7,8 +7,8 @@ import 'package:meal_recommendation_ai/core/helpers/extensions.dart';
 import '../../../../core/models/meal.dart';
 import '../../../../core/themes/app_colors.dart';
 import '../../../../core/themes/app_text_styles.dart';
-import '../../../home/persentation/businessLogic/meal_bloc.dart';
-import '../../../home/persentation/businessLogic/meal_event.dart';
+import '../../../home/persentation/controller/meal_bloc.dart';
+import '../../../home/persentation/controller/meal_event.dart';
 import '../controller/fav_meal_bloc.dart';
 
 class MealCard extends StatelessWidget {

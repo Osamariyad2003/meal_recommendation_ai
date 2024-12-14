@@ -25,7 +25,7 @@ import '../../features/home/domain/usecase/fetch_meals.dart';
 import '../../features/home/domain/usecase/firestore_usecase.dart';
 import '../../features/home/domain/usecase/remove_meal.dart';
 import '../../features/home/domain/usecase/remove_meal_from_fireStore.dart';
-import '../../features/home/persentation/businessLogic/meal_bloc.dart';
+import '../../features/home/persentation/controller/meal_bloc.dart';
 import '../../features/layout/presentation/blocs/layout_bloc.dart';
 import '../../features/layout/presentation/views/layout_view.dart';
 import '../../features/meal_details/presentation/views/meal_details_view.dart';
@@ -64,7 +64,7 @@ class AppRouter {
       case Routes.verifyOtp:
         return MaterialPageRoute(
             builder: (_) => BlocProvider<OtpAuthBloc>(
-                create: (_) => OtpAuthBloc(), child: const OtpScreen()));
+                create: (_) => OtpAuthBloc(), child:  OtpScreen()));
 
       // case Routes.home:
       //   return MaterialPageRoute(

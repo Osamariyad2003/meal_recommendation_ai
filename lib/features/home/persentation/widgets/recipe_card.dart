@@ -3,9 +3,11 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import '../../../../../core/models/meal.dart';
 import '../../../../../core/themes/app_colors.dart';
 import '../../../../core/themes/app_text_styles.dart';
-import '../businessLogic/meal_bloc.dart';
-import '../businessLogic/meal_event.dart';
-import '../businessLogic/meal_state.dart';
+
+import '../controller/meal_bloc.dart';
+import '../controller/meal_event.dart';
+import '../controller/meal_event.dart';
+import '../controller/meal_state.dart';
 import 'build_meal_card.dart';
 
 class RecipeCard extends StatefulWidget {

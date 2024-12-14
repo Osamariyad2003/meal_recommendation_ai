@@ -2,14 +2,14 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:meal_recommendation_ai/features/home/persentation/controller/meal_event.dart';
 import '../../../../core/helpers/cache_keys.dart';
 import '../../../../core/helpers/secure_storage_helper.dart';
 import '../../../../core/models/meal.dart';
 import '../../../../core/themes/app_colors.dart';
 import '../../../../core/themes/app_text_styles.dart';
-import '../businessLogic/meal_bloc.dart';
-import '../businessLogic/meal_event.dart';
-import '../businessLogic/meal_state.dart';
+import '../controller/meal_bloc.dart';
+import '../controller/meal_state.dart';
 import 'build_meal_card.dart';
 
 

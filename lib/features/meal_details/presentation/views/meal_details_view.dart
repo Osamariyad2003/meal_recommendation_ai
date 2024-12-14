@@ -36,13 +36,19 @@ class MealDetailsView extends StatelessWidget {
                 // ),
                 child: MealName(mealName: meal.name ?? 'Unknown Meal'),
               ),
-              SliverToBoxAdapter(
-                child: MealDataRow(
-                  mealDishName: meal.dishName!,
-                  mealCookTime: meal.cookTime!,
-                  mealServingSize: meal.servingSize!,
+              SliverPadding(
+                padding: EdgeInsetsDirectional.only(
+                  start: 24.w,
+                  top: 24.h,
+                  bottom: 16.h,
+                ),
+                sliver: SliverToBoxAdapter(
+                  child: MealDetailsTabBarView(
+                    meal: meal,
+                  ),
                 ),
               ),
+
               const SliverToBoxAdapter(
                 child: MealDetailsTabBar(),
               ),

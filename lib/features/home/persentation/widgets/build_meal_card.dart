@@ -6,8 +6,8 @@ import '../../../../../core/themes/app_colors.dart';
 import '../../../../../core/themes/app_text_styles.dart';
 import '../../../../core/models/meal.dart';
 import '../../../meal_details/presentation/views/meal_details_view.dart';
-import '../businessLogic/meal_bloc.dart';
-import '../businessLogic/meal_event.dart';
+import '../controller/meal_bloc.dart';
+import '../controller/meal_event.dart';
 import 'build_meal_details.dart';
 // Import your MealDetailsView here
 

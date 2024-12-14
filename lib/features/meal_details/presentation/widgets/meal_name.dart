@@ -19,6 +19,7 @@ class MealName extends StatelessWidget {
       child: Text(
         mealName,
         style: AppTextStyles.font28BoldDarkBlue,
+        maxLines: 3,
       ),
     );
   }

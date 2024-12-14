@@ -11,7 +11,8 @@ import '../bloc/otp_auth_event.dart';
 import '../bloc/otp_auth_state.dart';
 
 class OtpScreen extends StatefulWidget {
-  const OtpScreen({super.key});
+
+   OtpScreen({super.key});
 
   @override
   State<OtpScreen> createState() => _OtpScreenState();
