@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "769002061979",
+    "project_id": "meal-recommendation-5c3ac",
+    "storage_bucket": "meal-recommendation-5c3ac.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:769002061979:android:38b94fe11c49f6d90b463e",
+        "android_client_info": {
+          "package_name": "com.example.meal_recommendation_ai"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCLqL2SExboM2USEOwiU0VNiTCKoW8MwbI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
