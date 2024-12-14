@@ -59,12 +59,13 @@ class MealSuggestionScreen extends StatelessWidget {
                         
                         context.read<SuggestedRecipeBloc>().add(SaveSuggestedRecipeEvent(ingredientController.text));
                       }, child: Container(
+
                         decoration:BoxDecoration(
                           color: AppColors.primaryColor,
-                          borderRadius: BorderRadius.circular(20)
+                          borderRadius: BorderRadius.circular(10)
 
                         ),
-                        child: Text('add to my meals',style: AppTextStyles.font16Regular,),
+                        child: Text('add to my meals',style: AppTextStyles.textElevatedButton,),
                       ))
                     ],
                   );

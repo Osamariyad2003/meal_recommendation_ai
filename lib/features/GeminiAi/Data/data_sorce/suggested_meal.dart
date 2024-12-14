@@ -9,10 +9,17 @@ import '../models/ImageModel.dart';
 import '../models/suggested_meal_model.dart';
 
 class RecipeRemoteDatasource {
-  final String apiKey = 'AIzaSyBjI2b2Ark574i79UoKPwddsJin6FW2iCo';
+  final String apikey = 'AIzaSyBjI2b2Ark574i79UoKPwddsJin6FW2iCo';
   final gemini = GenerativeModel(
-    model: 'gemini-1.5-flash-latest',
+    model: 'gemini-1.5-pro',
     apiKey: 'AIzaSyBjI2b2Ark574i79UoKPwddsJin6FW2iCo',
+    generationConfig: GenerationConfig(
+      temperature: 0.9,
+      topK: 40,
+      topP: 0.95,
+      maxOutputTokens: 8192,
+      responseMimeType: 'text/plain',
+    ),
   );
 
   String extractJson(String responseText) {
