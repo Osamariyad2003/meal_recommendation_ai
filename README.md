@@ -31,69 +31,65 @@ Key highlights include:
 - **Secure Shared Preferences** for storing sensitive user data  
 
 ## Screen Shots 
-<div style="display: flex; flex-wrap: wrap; gap: 16px;">
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/splach.png" alt="Splash Screen" width="100%" />
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px;">
+  <div>
+    <img src="screenshots/splach.png" alt="Splash Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
   </div>
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/onboarding.png" alt="Onboarding Screen" width="100%" />
+  <div>
+    <img src="screenshots/onboarding.png" alt="Onboarding Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
   </div>
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/sign_in.png" alt="Sign In Screen" width="100%" />
-  </div>
-</div>
-
-
-<div style="display: flex; flex-wrap: wrap; gap: 16px;">
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/sign_up.png" alt="Sign Up  Screen" width="100%" />
-  </div>
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/otp.png" alt="Otp Screen" width="100%" />
-  </div>
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/confirm.png" alt="Confirm Screen" width="100%" />
+  <div>
+    <img src="screenshots/sign_in.png" alt="Sign In Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
   </div>
 </div>
 
-
-
-
-<div style="display: flex; flex-wrap: wrap; gap: 16px;">
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/home.png" alt="Home  Screen" width="100%" />
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+  <div>
+    <img src="screenshots/sign_up.png" alt="Sign Up Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
   </div>
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/fav.png" alt="Fav Screen" width="100%" />
+  <div>
+    <img src="screenshots/otp.png" alt="Otp Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
   </div>
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/profile.png" alt="Profile Screen" width="100%" />
+  <div>
+    <img src="screenshots/confirm.png" alt="Confirm Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
   </div>
 </div>
 
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+  <div>
+    <img src="screenshots/home.png" alt="Home Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+  </div>
+  <div>
+    <img src="screenshots/fav.png" alt="Fav Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+  </div>
+  <div>
+    <img src="screenshots/profile.png" alt="Profile Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+  </div>
+</div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 16px;">
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/filtter.png" alt="Filter  Screen" width="100%" />
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+  <div>
+    <img src="screenshots/filtter.png" alt="Filter Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
   </div>
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/side_bar.png" alt="Side Bar Screen" width="100%" />
+  <div>
+    <img src="screenshots/side_bar.png" alt="Side Bar Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
   </div>
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/see_all.png" alt="Profile Screen" width="100%" />
+  <div>
+    <img src="screenshots/see_all.png" alt="See All Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
   </div>
 </div>
 
-<div style="display: flex; flex-wrap: wrap; gap: 16px;">
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/ai_recmmondation.png" alt="Gemini Ai  Screen" width="100%" />
+<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+  <div>
+    <img src="screenshots/ai_recmmondation.png" alt="Gemini Ai Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
   </div>
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/meal_detail.png" alt="Meal Detail Screen" width="100%" />
+  <div>
+    <img src="screenshots/meal_detail.png" alt="Meal Detail Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
   </div>
-  <div style="flex: 1 1 calc(33.33% - 16px);">
-    <img src="screenshots/meal_detail2.png" alt="Meal Detail Screen" width="100%" />
+  <div>
+    <img src="screenshots/meal_detail2.png" alt="Meal Detail Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
   </div>
 </div>
+
 
 
