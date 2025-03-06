@@ -31,4 +31,69 @@ Key highlights include:
 - **Secure Shared Preferences** for storing sensitive user data  
 
 ## Screen Shots 
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/splach.png" alt="Splash Screen" width="100%" />
+  </div>
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/onboarding.png" alt="Onboarding Screen" width="100%" />
+  </div>
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/sign_in.png" alt="Sign In Screen" width="100%" />
+  </div>
+</div>
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/sign_up.png" alt="Sign Up  Screen" width="100%" />
+  </div>
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/otp.png" alt="Otp Screen" width="100%" />
+  </div>
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/confirm.png" alt="Confirm Screen" width="100%" />
+  </div>
+</div>
+
+
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/home.png" alt="Home  Screen" width="100%" />
+  </div>
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/fav.png" alt="Fav Screen" width="100%" />
+  </div>
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/profile.png" alt="Profile Screen" width="100%" />
+  </div>
+</div>
+
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/filtter.png" alt="Filter  Screen" width="100%" />
+  </div>
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/side_bar.png" alt="Side Bar Screen" width="100%" />
+  </div>
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/see_all.png" alt="Profile Screen" width="100%" />
+  </div>
+</div>
+
+<div style="display: flex; flex-wrap: wrap; gap: 16px;">
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/ai_recmmondation.png" alt="Gemini Ai  Screen" width="100%" />
+  </div>
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/meal_detail.png" alt="Meal Detail Screen" width="100%" />
+  </div>
+  <div style="flex: 1 1 calc(33.33% - 16px);">
+    <img src="screenshots/meal_detail2.png" alt="Meal Detail Screen" width="100%" />
+  </div>
+</div>
+
 
