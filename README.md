@@ -31,65 +31,99 @@ Key highlights include:
 - **Secure Shared Preferences** for storing sensitive user data  
 
 ## Screen Shots 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 16px;">
+<style>
+  /* General Grid Layout */
+  .image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 16px;
+  }
+
+  /* Image Styling */
+  .image-grid img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive Design for Tablets */
+  @media (max-width: 768px) {
+    .image-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+
+  /* Responsive Design for Mobile */
+  @media (max-width: 480px) {
+    .image-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+</style>
+
+<!-- Image Grid Section -->
+<div class="image-grid">
   <div>
-    <img src="screenshots/splach.png" alt="Splash Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+    <img src="screenshots/splach.png" alt="Splash Screen" />
   </div>
   <div>
-    <img src="screenshots/onboarding.png" alt="Onboarding Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+    <img src="screenshots/onboarding.png" alt="Onboarding Screen" />
   </div>
   <div>
-    <img src="screenshots/sign_in.png" alt="Sign In Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+    <img src="screenshots/sign_in.png" alt="Sign In Screen" />
   </div>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+<div class="image-grid">
   <div>
-    <img src="screenshots/sign_up.png" alt="Sign Up Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+    <img src="screenshots/sign_up.png" alt="Sign Up Screen" />
   </div>
   <div>
-    <img src="screenshots/otp.png" alt="Otp Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+    <img src="screenshots/otp.png" alt="Otp Screen" />
   </div>
   <div>
-    <img src="screenshots/confirm.png" alt="Confirm Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
-  </div>
-</div>
-
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
-  <div>
-    <img src="screenshots/home.png" alt="Home Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
-  </div>
-  <div>
-    <img src="screenshots/fav.png" alt="Fav Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
-  </div>
-  <div>
-    <img src="screenshots/profile.png" alt="Profile Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+    <img src="screenshots/confirm.png" alt="Confirm Screen" />
   </div>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+<div class="image-grid">
   <div>
-    <img src="screenshots/filtter.png" alt="Filter Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+    <img src="screenshots/home.png" alt="Home Screen" />
   </div>
   <div>
-    <img src="screenshots/side_bar.png" alt="Side Bar Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+    <img src="screenshots/fav.png" alt="Fav Screen" />
   </div>
   <div>
-    <img src="screenshots/see_all.png" alt="See All Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+    <img src="screenshots/profile.png" alt="Profile Screen" />
   </div>
 </div>
 
-<div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px;">
+<div class="image-grid">
   <div>
-    <img src="screenshots/ai_recmmondation.png" alt="Gemini Ai Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+    <img src="screenshots/filtter.png" alt="Filter Screen" />
   </div>
   <div>
-    <img src="screenshots/meal_detail.png" alt="Meal Detail Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+    <img src="screenshots/side_bar.png" alt="Side Bar Screen" />
   </div>
   <div>
-    <img src="screenshots/meal_detail2.png" alt="Meal Detail Screen" style="width: 100%; height: auto; border-radius: 8px; box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);" />
+    <img src="screenshots/see_all.png" alt="See All Screen" />
   </div>
 </div>
+
+<div class="image-grid">
+  <div>
+    <img src="screenshots/ai_recmmondation.png" alt="Gemini Ai Screen" />
+  </div>
+  <div>
+    <img src="screenshots/meal_detail.png" alt="Meal Detail Screen" />
+  </div>
+  <div>
+    <img src="screenshots/meal_detail2.png" alt="Meal Detail Screen" />
+  </div>
+</div>
+
 
 
 
