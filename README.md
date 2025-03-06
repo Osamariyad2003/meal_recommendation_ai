@@ -114,7 +114,7 @@ Key highlights include:
 
 <div class="image-grid">
   <div>
-    <img src="screenshots/ai_recmmondation.png" alt="Gemini Ai Screen" />
+    <img src="screenshots/ai_recmmondation.jpg" alt="Gemini Ai Screen" />
   </div>
   <div>
     <img src="screenshots/meal_detail.png" alt="Meal Detail Screen" />
